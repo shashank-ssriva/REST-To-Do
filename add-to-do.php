@@ -1,6 +1,7 @@
 <?php
 include_once('config.php');
 if($_SERVER['REQUEST_METHOD'] == "POST"){
+	
 	// Get data from the REST client
 	$task = isset($_POST['task']) ? mysqli_real_escape_string($conn, $_POST['task']) : "";
 	$date = isset($_POST['date']) ? mysqli_real_escape_string($conn, $_POST['date']) : "";
